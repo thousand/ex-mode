@@ -22,17 +22,8 @@ class ExModeView extends View
       @detach()
 
   showInput: ->
-    console.log "ExModeView was opened!"
     if @hasParent()
       @commandInput.focus()
-    else
-      atom.workspaceView.prependToBottom(this)
-      @commandInput.focus()
-
-  toggle: ->
-    console.log "ExModeView was toggled >.<"
-    if @hasParent()
-      @detach()
     else
       atom.workspaceView.prependToBottom(this)
       @commandInput.focus()

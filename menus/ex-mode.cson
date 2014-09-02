@@ -1,1 +1,16 @@
 # See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  '.overlayer':
+    'Execute...': 'ex-mode:open'
+
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'ex-mode'
+      'submenu': [
+        { 'label': 'Execute', 'command': 'ex-mode:toggle' }
+      ]
+    ]
+  }
+]
