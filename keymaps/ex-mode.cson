@@ -11,4 +11,4 @@
   ':': 'ex-mode:open'
 
 '.ex-mode':
-  'escape': 'ex-mode:hide'
+  'escape': 'ex-mode:close'
